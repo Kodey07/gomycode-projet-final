@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+
+    color: #fff;
+    padding-bottom: 100px;
+    background-size: 100% 100%, cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/pageheader-banner.jpg);
+}
+
+
+nav {
+
+    padding: 15px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_left h1 span {
+    text-transform: uppercase;
+    color: #F38708;
+}
+
+.navbar_right ul a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: #fff;
+}
+
+.navbar_right ul a button {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    background-color: #F38708;
+    padding: 10px 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: #fff;
+}
+
+header .container {
+    padding: 0 150px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+header .container p {
+    margin: 20px 0;
+    color: #fff;
+}
+
+.container .btn_box .btn_menu {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    background-color: #F38708;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.container .btn_box .btn_reservation {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    background-color: #2E72D5;
+    padding: 10px 15px;
+    color: #fff;
+}
