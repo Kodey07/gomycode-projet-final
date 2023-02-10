@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Homard & display=swap');
 
 * {
     margin: 0;
@@ -7,128 +7,191 @@
 }
 
 body {
+    font-family: 'Lobster', cursive;
+    height: 200vh;
 
-    font-family: 'Open Sans', sans-serif;
 }
 
 header {
-    height: 95vh;
-    color: #fff;
-    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: fixed;
+    width: 100%;
+    top: 2%;
+    left: 0;
+    transition: 0.6s;
+    z-index: 999;
+    margin-top: 0;
+    /* max-width: 60rem; */
+
+}
+
+header h1 {
     position: relative;
-    /* padding-bottom: 200px; */
-    background-size: 200%, 200%, cover;
-    background-repeat: no-repeat;
-    background-image: url(./images/pageheader-banner.jpg);
-    border: 0.1px solid rgb(0, 0, 0, 0.3);
-
+    height: 70px;
+    transition: height 0.5s;
+    padding-top: 10px;
+    color: #fff;
+    margin-left: 5%;
+    font-size: 50px;
+    margin-top: -1%;
 }
 
-.nav_toggle{
+header h1 span {
+    position: relative;
+    text-transform: uppercase;
+    color: rgba(247, 153, 38, 0.842);
+    font-size: xx-large;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.nav_toggle {
     display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 7rem;
 }
 
-nav {
+.open {
+    height: 35vh;
+}
 
-    padding: 5px 150px;
+
+
+
+header .nav_right ul {
+    position: relative;
+    gap: 25px;
+    width: 500px;
+    justify-content: space-between;
+    list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    transition: 0.6s;
-}
-
-.navbar_left h1 {
-    padding-top: 2%;
-    font-size: 50px;
-
-}
-
-.navbar_left h1 span {
-    text-transform: uppercase;
-    color: #F38708;
-    font-size: 55px;
-}
-
-.navbar_right ul a {
+    padding-top: 10px;
+    /* padding-right: 200%; */
     position: relative;
-    font-weight: 600;
+    margin-left: -65%;
+    /* padding: 0; */
+}
+
+header .nav_right ul li a {
+    position: relative;
     text-decoration: none;
-    margin-right: 20px;
+    color: #262626;
+    font-size: 18px;
+    text-transform: uppercase;
     color: #fff;
 }
 
-.navbar_right ul a:hover {
+header .nav_right ul li a:hover {
     color: #F38708;
     border-bottom: 2px solid #F38708;
 }
 
-nav.sticky {
-    height: 10%;
+header .nav_right ul button {
+    position: relative;
+    padding: 10px 15px;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: rgba(247, 153, 38, 0.842);
+    border: none;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+header.sticky {
+    height: 7%;
     color: #000;
     background-color: #fff;
-    box-shadow: 3px 0 10px rgb(0, 0, 0, 0.3);
+    z-index: 999;
+    /* box-shadow: 3px 0 10px rgb(0, 0, 0, 0.3); */
 }
 
-nav.sticky .navbar_right ul a {
-    color: #000;
+header.sticky h1 {
+    color: #000
 }
 
-nav.sticky .navbar_right ul a:hover {
+header.sticky .nav_right ul li a {
+    color: #000
+}
+
+header.sticky .nav_right ul li a:hover {
     color: #F38708;
 }
 
-.navbar_right ul button {
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    outline: none;
-    border: none;
-    background-color: #F38708;
-    padding: 10px 15px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    color: #fff;
-    cursor: pointer;
+
+.banner_box {
+    position: relative;
+    background: url(/images/pageheader-banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
 }
 
-
-header .container {
-    padding: 0 150px;
-    margin-top: 200px;
+.banner_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-header .container p {
-    margin: 20px 0;
+.banner_content h1 {
+    font-size: 60px;
+    text-transform: capitalize;
     color: #fff;
 }
 
-.container .btn_box .btn_menu {
-    font-family: 'Open Sans', sans-serif;
+.banner_content p {
+    color: #fff;
+    font-size: 20px;
+    padding-top: 2%;
+    letter-spacing: 2px;
+}
+
+.banner_content .banner_btn {
+    padding-top: 3%;
+}
+
+.banner_content .banner_btn .btn_menu {
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+    padding: 10px 25px;
     text-transform: uppercase;
-    outline: none;
-    border: none;
+    color: #fff;
     background-color: #F38708;
+    border: none;
+    cursor: pointer;
+    /* transition: 0.6s ; */
+    transition: ease-in-out 0.1s;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+
+.banner_content .banner_btn .btn_reservation {
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
     padding: 10px 15px;
+    text-transform: uppercase;
     color: #fff;
-    font-weight: 600;
+    background-color: rgb(39, 39, 238);
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     cursor: pointer;
 }
 
-.container .btn_box .btn_reservation {
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    outline: none;
-    border: none;
-    background-color: #2E72D5;
-    padding: 10px 15px;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
+.banner_content .banner_btn .btn_menu:hover {
+    width: 200px;
+
 }
 
 
@@ -137,7 +200,8 @@ header .container p {
 .box_about {
     display: flex;
     justify-content: space-between;
-    margin: 7% 10%;
+    align-items: center;
+    margin: 5% 10%;
 }
 
 .box_about1 {
@@ -151,19 +215,21 @@ header .container p {
 
 .box_about .box_about1 p {
     text-align: justify;
-    width: 550px;
+    width: 800px;
+    font-size: 25px;
 }
 
 .box_about .box_about1 h1 {
     text-transform: capitalize;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     font-size: 50px;
 }
 
 .box_about .plat_3 img {
-    width: 370px;
-    height: 280px;
-    margin-left: -30%;
+    width: 450px;
+    height: 400px;
+    margin-left: -15%;
+    object-fit: cover;
 }
 
 
@@ -194,6 +260,11 @@ section .box_menu h1 span {
     font-size: 80px;
 }
 
+.menu .box_menu p {
+    font-size: 25px;
+    text-align: center;
+}
+
 .menu_images {
     gap: 10px;
     display: flex;
@@ -203,7 +274,7 @@ section .box_menu h1 span {
 
 .menu_images .img_box {
     width: 20%;
-    height: 250px;
+    height: 350px;
     text-align: center;
     box-shadow: 5px 5px 5px 5px rgb(128, 121, 121);
     margin-bottom: 10px;
@@ -212,27 +283,35 @@ section .box_menu h1 span {
 
 .menu_images .img_box img {
     width: 100%;
-    height: 85%;
+    height: 90%;
     object-fit: cover;
+}
+
+.menu_images .img_box p {
+    font-size: 20px;
+    text-transform: capitalize;
 }
 
 .btn-menu {
     text-align: center;
+    margin-top: 2%;
 }
 
 
 section button {
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
     text-transform: uppercase;
     outline: none;
     border: none;
     background-color: #F38708;
-    padding: 10px 15px;
+    padding: 13px 18px;
     color: #fff;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     margin-top: 1%;
+    cursor: pointer;
     /* text-align: center; */
 
 }
@@ -264,6 +343,10 @@ section button {
     font-size: 80px;
 }
 
+.text_expert p {
+    font-size: 25px;
+}
+
 .images_expert {
     display: flex;
     justify-content: center;
@@ -272,13 +355,14 @@ section button {
 }
 
 .images_expert img {
-    width: 150px;
-    height: 200px;
+    width: 280px;
+    height: 400px;
     object-fit: cover;
 }
 
 .images_expert p {
     text-align: center;
+    font-size: 20px;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++ AVIS-CLIENTS-STYLE +++++++++++++++++++++++++++++++++++++++  */
@@ -286,11 +370,13 @@ section button {
 
 .box_clients {
     color: #fff;
-    background-size: 100% 100% cover;
-    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
     background-position: top center;
     background-image: url(./images/bg2.jpg);
-    height: 700px;
+    height: 85vh;
+
 
 }
 
@@ -298,7 +384,7 @@ section button {
     text-align: center;
     text-transform: capitalize;
     margin-top: 5%;
-    padding-top: 2%;
+    padding-top: -2%;
     font-size: 50px;
 }
 
@@ -310,6 +396,7 @@ section button {
 .box_clients p {
     text-align: center;
     margin-top: 1%;
+    font-size: 25px;
 }
 
 .box_avis_clients {
@@ -332,7 +419,7 @@ section button {
     margin-top: 2%;
     border-radius: 5%;
     background-color: #fff;
-    height: 400px;
+    height: 450px;
 
 }
 
@@ -350,23 +437,16 @@ section button {
     text-align: center;
     color: darkgray;
     margin-top: 3%;
+    font-size: 18px;
 }
 
 .box_avis_clients .client_1 a {
     color: #F38708;
     text-decoration: none;
     margin-top: 10%;
+    font-size: 20px;
 }
 
-/* .box_avis_clients .client_2 img{
-    width: 70px;
-    height: 70px;
-}
-
-.box_avis_clients .client_3 img{
-    width: 70px;
-    height: 70px;
-} */
 
 
 
@@ -374,13 +454,13 @@ section button {
 /* ******************************* FOOTER ****************************************** */
 
 footer {
-
+    /* position: relative; */
     background-position: top center;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
     background-image: url(./images/img-form.jpg);
-    height: 650px;
-    margin-top: 5%;
+    height: 85vh;
+    margin-top: -6%;
 }
 
 footer .description {
@@ -393,7 +473,7 @@ footer .description {
 }
 
 footer h1 {
-    margin-top: -2%;
+    margin-top: -1%;
     text-transform: capitalize;
     font-size: 50px;
     /* font-size: 10%; */
@@ -406,6 +486,7 @@ footer .description h1 span {
 }
 
 footer p {
+    font-size: 25px;
     margin-top: 0.5%;
 }
 
@@ -413,7 +494,7 @@ footer form {
 
     width: 25%;
     height: 10%;
-    margin-top: 1.5%;
+    margin-top: 2%;
     padding-top: 3.5%;
     padding-bottom: 4%;
     padding-left: 2%;
@@ -454,7 +535,7 @@ footer form button {
 .copyright {
     text-align: center;
     width: 100%;
-    height: 35px;
+    height: 50px;
     border: none;
 }
 
@@ -466,13 +547,265 @@ footer form button {
 }
 
 .copyright p {
+    font-size: 18px;
     margin-top: 19px;
 }
 
 
+/* ********************************************************************************************** */
 
-@media all and (max-width: 720px){
-    nav{
+/* -------------------------------------- RESPONSIVE DESIGN ------------------------------------------ */
+
+/* ********************************************************************************************** */
+
+
+
+@media (max-width: 1200px) {
+
+    /* header h1 {
+        margin-left: -2%;
+    }
+
+    header .nav_right ul li a {
+        font-size: 16px;
+    }
+
+    header .nav_right {
+        margin-right: -7%;
+        margin-top: 1%;
+    }
+
+    header .nav_right ul button {
+        font-size: 16px;
+    }
+
+    header.sticky {
+        height: 8%;
+    }
+
+    .banner_content h1 {
+        font-size: 50px;
+    } */
+
+
+    .box_about .box_about1 h1 {
+        font-size: 40px;
+    }
+
+    .box_about .box_about1 h1 span {
+        font-size: 60px;
+    }
+
+    .box_about .box_about1 p {
+        width: 600px;
+        font-size: 18px;
+    }
+
+    .box_about .plat_3 img {
+        width: 350px;
+        height: 300px;
+        margin-left: 8%;
+    }
+
+    section .box_menu h1 {
+        font-size: 40px;
+    }
+
+    section .box_menu h1 span {
+        font-size: 60px;
+    }
+
+    .menu .box_menu p {
+        font-size: 19px;
+    }
+
+    .menu_images .img_box {
+        height: 235px;
+    }
+
+    .menu_images .img_box img {
+        height: 85%;
+    }
+
+    section button {
+        font-size: 15px;
+    }
+
+    .text_expert h1 {
+        font-size: 40px;
+    }
+
+    .text_expert h1 span {
+        font-size: 60px;
+    }
+
+    .text_expert p {
+        font-size: 19px;
+    }
+
+    .images_expert img {
+        width: 235px;
+        height: 320px;
+    }
+
+    .box_clients h1 {
+        font-size: 40px;
+    }
+
+    .box_clients h1 span {
+        font-size: 60px;
+    }
+
+    .box_clients p {
+        font-size: 19px;
+    }
+
+    .box_avis_clients {
+        margin-top: 5%;
+    }
+
+    .client_1 {
+        width: 23%;
+        height: 435px;
+    }
+
+    footer {
+        height: 80vh;
+    }
+
+    footer h1 {
+        font-size: 40px;
+    }
+
+    footer .description h1 span {
+        font-size: 60px;
+    }
+
+    footer p {
+        font-size: 19px;
+    }
+
+    footer form {
+        width: 30%;
+        height: 7%;
+        margin-top: 5%;
+    }
+
+    .copyright {
+        height: 35px;
+    }
+}
+
+
+@media (max-width: 990px) {
+    header {
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav_right {
+        display: block;
+        margin-left: 60%;
+        height: 0;
+        overflow: hidden;
+
+    }
+
+    header .nav_right ul {
+        display: block;
+        text-align: center;
+    }
+
+    header .nav_right ul li {
+        padding: 0.3rem 0;
+    }
+
+    header .nav_right ul li a {
+        font-size: 1.5rem;
+    }
+
+    .nav_toggle {
+        display: block;
+    }
+
+    /* ************************************************* */
+    .box_about {
+
+        flex-direction: column;
+        /* text-align: center; */
+
+    }
+
+    .box_about .box_about1 p {
+        text-align: justify;
+    }
+
+    .box_about .plat_3 {
+        text-align: center;
+        padding-top: 2%;
+    }
+
+    .box_about .box_about1 h1 {
+        text-align: center;
+    }
+
+    /* ******************************************************* */
+
+    /* .menu{
+    text-align: center;
+} */
+
+    .menu_images {
+        margin-left: 7%;
+        gap: 20px;
+    }
+
+    .menu_images .img_box {
+        width: 31%;
+        height: 260px;
+        /* text-align: center; */
+
+    }
+
+
+}
+
+
+@media (max-width: 850px) {
+
+    .menu_images {
+        margin-left: 15%;
+        gap: 35px;
+    }
+
+    .menu_images .img_box {
+        width: 45%;
+        height: 290px;
+        /* text-align: center; */
+
+    }
+}
+
+
+@media (max-width: 720px) {
+    .menu_images {
+        margin-left: 18%;
+        gap: 45px;
+    }
+
+    .menu_images .img_box {
+        width: 75%;
+        height: 350px;
+        /* text-align: center; */
+
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .box_about .box_about1 p {
+        border: solid red 3px;
+        margin-right: 20%;
     }
 }
