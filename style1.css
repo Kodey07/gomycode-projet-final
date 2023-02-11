@@ -112,7 +112,7 @@ header.sticky .nav_right ul li a:hover {
 
 .banner_box {
     position: relative;
-    background: url(/images/pageheader-banner.jpg);
+    background: url(/images/pageheader-banner\ \(2\).jpg);
     background-size: cover;
     background-position: center center;
     height: 100vh;
