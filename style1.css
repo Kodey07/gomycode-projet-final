@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2? family= Homard & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lobster', cursive;
+    height: 200vh;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: fixed;
+    width: 100%;
+    top: 2%;
+    left: 0;
+    transition: 0.6s;
+    z-index: 999;
+    margin-top: 0;
+    /* max-width: 60rem; */
+
+}
+
+header h1 span {
+    position: relative;
+    text-transform: uppercase;
+    color: rgba(247, 153, 38, 0.842);
+    font-size: xx-large;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.nav_toggle {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 7rem;
+}
+
+.open {
+    height: 35vh;
+}
