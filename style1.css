@@ -89,3 +89,91 @@ header .nav_right ul button {
     color: #fff;
     cursor: pointer;
 }
+
+header.sticky {
+    height: 7%;
+    color: #000;
+    background-color: #fff;
+    z-index: 999;
+    /* box-shadow: 3px 0 10px rgb(0, 0, 0, 0.3); */
+}
+
+header.sticky h1 {
+    color: #000
+}
+
+header.sticky .nav_right ul li a {
+    color: #000
+}
+
+header.sticky .nav_right ul li a:hover {
+    color: #F38708;
+}
+
+.banner_box {
+    position: relative;
+    background: url(/images/pageheader-banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+}
+
+.banner_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner_content h1 {
+    font-size: 60px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.banner_content p {
+    color: #fff;
+    font-size: 20px;
+    padding-top: 2%;
+    letter-spacing: 2px;
+}
+
+.banner_content .banner_btn {
+    padding-top: 3%;
+}
+
+.banner_content .banner_btn .btn_menu {
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #F38708;
+    border: none;
+    cursor: pointer;
+    /* transition: 0.6s ; */
+    transition: ease-in-out 0.1s;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+
+.banner_content .banner_btn .btn_reservation {
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgb(39, 39, 238);
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+
+.banner_content .banner_btn .btn_menu:hover {
+    width: 200px;
+
+}
