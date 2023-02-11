@@ -46,3 +46,46 @@ header h1 span {
 .open {
     height: 35vh;
 }
+
+header .nav_right ul {
+    position: relative;
+    gap: 25px;
+    width: 500px;
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    /* padding-right: 200%; */
+    position: relative;
+    margin-left: -65%;
+    /* padding: 0; */
+}
+
+header .nav_right ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #262626;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+header .nav_right ul li a:hover {
+    color: #F38708;
+    border-bottom: 2px solid #F38708;
+}
+
+header .nav_right ul button {
+    position: relative;
+    padding: 10px 15px;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: rgba(247, 153, 38, 0.842);
+    border: none;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+}
